@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+
+
+/* .......Navbar.....*/
+@layer base{
+    body{
+        @apply font-[Rateway];
+    }
+    li{
+        @apply px-4;
+        @apply cursor-pointer
+    }
+}
+
+/* ........Home....*/
+.banner{
+    background: url(../src/assets/banner.jpg)no-repeat right center;
+    background-size: cover;
+}
+
+/*........About....*/
+
+
+ .content-wrapper {
+    @apply flex flex-col lg:flex-row items-center gap-8 px-14; 
+  }
+  
+  .profile-image {
+    @apply  pt-20 object-cover shadow-md; 
+  }
+  
+   /*Responsive adjustments 
+  @screen lg {
+    .content-wrapper {
+      @apply flex-row;
+    }
+    .profile-image {
+      @apply w-64 h-64; 
+    }
+  }*/
