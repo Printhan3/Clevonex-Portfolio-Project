@@ -1,5 +1,8 @@
 import React from 'react'
 import {FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa'
+import Detail1 from '../assets/headset.png'
+import Detail2 from '../assets/Vector1.png'
+import Detail3 from '../assets/Vector2.png'
 
 const Footer = () => {
   return (
