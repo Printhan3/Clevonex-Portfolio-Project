@@ -63,14 +63,26 @@ function Header() {
     );
   }
 
-  function OpeningHours() {
+function OpeningHours() {
     return (
       <div className=" p-6 rounded-lg">
         <h2 className="text-xl font-bold text-pink-500 mb-4 flex justify-between py-2 border-b border-pink-700">OPENING HOURS</h2>
-        <h4 className='text-gray-300 flex justify-between py-2'>Mon-Friday:  9am-7pm</h4>
-        <h4 className='text-gray-300 flex justify-between py-2'>Saturday:    10am-5pm</h4>
-        <h4 className='text-gray-300 flex justify-between py-2'>Sunday:      ByCall</h4>
-      </div>
+        <div className= "container mx-auto grid grid-cols-3 gap-4">
+           <h4 className='text-gray-300 flex justify-between py-2'>Mon-Friday:</h4>
+          <h4 className='text-gray-300 flex justify-between py-2'>9am-7pm</h4>
+          </div>
+
+          <div className= "container mx-auto grid grid-cols-3 gap-4">
+          <h4 className='text-gray-300 flex justify-between py-2'>Saturday:</h4>
+          <h4 className='text-gray-300 flex justify-between py-2'>10am-5pm</h4>
+          </div>
+
+          <div className= "container mx-auto grid grid-cols-3 gap-4">
+          <h4 className='text-gray-300 flex justify-between py-2'>Sunday:</h4>
+          <h4 className='text-gray-300 flex justify-between py-2'>ByCall</h4>
+          </div>
+        </div>
+         
     );
   }
     
