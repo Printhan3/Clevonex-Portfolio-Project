@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+
+ @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Didact+Gothic&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 
 
 /* .......Navbar.....*/
 @layer base{
     body{
-        @apply font-[Rateway];
+        
+      font-family: 'Didact Gothic', sans-serif;
+      font-family: "Oswald" , sans-serif;
+      
     }
     li{
         @apply px-4;
@@ -21,6 +27,9 @@
 .banner{
     background: url(../src/assets/banner.jpg)no-repeat right center;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
 }
 
 /*........About....*/
@@ -28,7 +37,7 @@
 
  .content-wrapper {
     @apply flex flex-col lg:flex-row items-center gap-8 px-14; 
-  }
+  } 
   
   .profile-image {
     @apply  pt-20 object-cover shadow-md; 
@@ -43,3 +52,4 @@
       @apply w-64 h-64; 
     }
   }*/
+
